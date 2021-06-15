@@ -1,0 +1,97 @@
+.title-sign {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "titillium_webextralight", sans-serif;
+}
+
+.text-field {
+    background-color: whitesmoke;
+    margin-top: 5px;
+    width: 200px;
+    color: #36454f;
+    font-size: 14px;
+    height: 35px;
+}
+
+.text-cont {
+    position: relative;
+}
+
+.floating-lab {
+    font-family: "titillium_webextralight", sans-serif;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 18px;
+    font-size: 15px;
+    color: black;
+    transition: 0.2s ease all;
+}
+
+.login-buttons {
+    margin-top: 40px;
+}
+
+.login-button-close {
+    border-radius: 5px;
+    border: 1px solid #009036;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: slategrey;
+    text-align: center;
+    height: 30px;
+    cursor:pointer;
+}
+
+.login-button-close[disabled] {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+
+input:focus ~ .floating-lab,
+input:not(:focus):valid ~ .floating-lab {
+    top: 9px;
+    bottom: 10px;
+    left: 10px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.text-field:focus {
+    outline: none !important;
+    border: 1px solid #d3f8d3;
+    box-shadow: 0 0 10px #a6f1a6;
+}
+
+.text-field:not(:focus) {
+    outline: none !important;
+    border: 1px solid #d3f8d3;
+}
+
+.text-field-short:focus {
+    outline: none !important;
+    border: 1px solid #d3f8d3;
+    box-shadow: 0 0 10px #a6f1a6;
+}
+
+.text-field-short:not(:focus) {
+    outline: none !important;
+    border: 1px solid #d3f8d3;
+}
+
+
+.text-field, .text-field-short {
+    background-color: #e9fce9;
+    margin-top: 8px;
+    color: #36454f;
+    font-size: 14px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

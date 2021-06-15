@@ -1,0 +1,165 @@
+.App {
+    background-color: white;
+    text-align: center;
+    font-family: "titillium_webregular", sans-serif;
+}
+
+* {
+    font-family: "titillium_webregular", sans-serif;
+}
+
+.welcome-stack {
+    position: absolute;
+    font-size: 17px;
+    top: 30%;
+    color: dimgrey;
+}
+
+.App-logo {
+    height: 20vmin;
+    pointer-events: none;
+}
+
+.bottom-logos{
+    position: absolute;
+    bottom: 20px;
+}
+
+.lum-urb-logo {
+    display: inline-block;
+    height: 10vmin;
+    pointer-events: none;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.App-logo-top {
+    padding: 15px;
+    height: 5vmin;
+    min-height: 40px;
+    pointer-events: none;
+}
+
+.app-auth-arr {
+    margin-top: 5px;
+    height: 20px;
+}
+
+.auth-screen{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    content: ' ';
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        /*animation: App-logo-spin infinite 20s linear;*/
+    }
+
+    .App-header-top {
+        animation: App-logo-move 0.5s linear;
+    }
+
+}
+
+.auth-menu{
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    background-color: #e7e6df;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.auth-user{
+    color: #282c34;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+}
+
+.App-header {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-header-top {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-move {
+    from {
+        transform: translateX(20vh);
+    }
+    to {
+        transform: translateX(0vh);
+    }
+}
+
+
+/* ***** */
+
+.App-cities {
+    display: flex;
+    background-color: #282c34;
+    min-height: 93vh;
+    min-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+@keyframes delay-visible {
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
+}
+
+.App-login{
+    display: flex;
+    background-color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #282c34;
+}

@@ -1,0 +1,63 @@
+.user-menu {
+    margin-top: 10px;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #36454f;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.h-line{
+    border-top: 1px solid #e7e6df;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.user-menu-name {
+    color: #36454f;
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-image{
+    vertical-align: middle;
+    display: inline-block;
+    height: 22px;
+    top: 50%;
+    border-radius: 15px;
+    border: 1px solid #e7e6df;
+    margin-right: 10px;
+}
+
+.user-menu-logout {
+    color: #36454f;
+    border-radius: 5px;
+    position: relative;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-menu-logout:hover {
+    background: #f4fdf4;
+}
+
+
+.logout-image {
+    vertical-align: middle;
+    display: inline-block;
+    height: 17px;
+    top: 50%;
+}
+
+.logout-text {
+    display: inline-block;
+    margin-left: 10px;
+}

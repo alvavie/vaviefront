@@ -1,0 +1,64 @@
+.home-top-welcome {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "titillium_webextralight", sans-serif;
+    color: #009036;
+}
+
+
+.table-cl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 10vw 40px;
+    background-color: #e7e6df;
+    padding: 20px;
+}
+
+
+.th-name {
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: "titillium_webbold", sans-serif;
+}
+
+.th-line1 {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "titillium_webextralight", sans-serif;
+}
+
+.home-contracts{
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 10vw;
+    font-family: "titillium_webextralight", sans-serif;
+}
+
+.ctr-module{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 10vw 10px;
+    background-color: #e9fce9;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tr-key{
+    text-align: left;
+    font-size: 10px;
+    font-family: "titillium_webregular", sans-serif;
+}
+
+.tr-value{
+    text-align: left;
+    font-size: 15px;
+    font-family: "titillium_webregular", sans-serif;
+}
