@@ -32,9 +32,7 @@ class Home extends Component {
         }
         if (this.props.currentContracts.contracts !== undefined && !this.props.currentContracts.isFetching && !this.state.dataContract) {
             console.log("contracts received");
-            let contracts = this.props.currentContracts.contracts;
-            console.log(contracts);
-            this.setState({dataContract: true, contracts: contracts});
+            this.setState({dataContract: true});
         }
     }
 
@@ -48,9 +46,7 @@ class Home extends Component {
     }
 
     render() {
-        const dataClient = this.state.dataClient;
-        const dataContract = this.state.dataContract;
-        const contracts = this.state.contracts;
+        let dataClient = this.state.dataClient;
         let viewClient;
         let viewContracts;
 
@@ -85,36 +81,36 @@ class Home extends Component {
             viewClient = <div/>
         }
 
-        if (dataContract) {
+        if (this.props.currentContracts.contracts !== undefined) {
+            if (this.props.currentContracts.contracts.length > 0) {
+                let contracts = this.props.currentContracts.contracts;
+                viewContracts = <div className={'panel-contracts'}>
+                    {contracts.map(repo => (
+                        <div className={'ctr-module'} key={repo.contractId} onClick={() => this.openContract(repo)}>
+                            <table className={'ctr-table'}>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <tr className={'tr-key'}>contract Id</tr>
+                                        <tr className={'tr-value'}>{repo.contractId}</tr>
+                                    </td>
+                                    <td>
+                                        <tr className={'tr-key'}>prime</tr>
+                                        <tr className={'tr-value'}>{repo.premiumAmount}</tr>
+                                    </td>
+                                    <td>
+                                        <tr className={'tr-key'}>capital décès</tr>
+                                        <tr className={'tr-value'}>{repo.deathamount}</tr>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-            viewContracts = <div className={'panel-contracts'}>
-                {contracts.map(repo => (
 
-                    <div className={'ctr-module'} key={repo.contractId} onClick={() => this.openContract(repo)}>
-                        <table className={'ctr-table'}>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <tr className={'tr-key'}>contract Id</tr>
-                                    <tr className={'tr-value'}>{repo.contractId}</tr>
-                                </td>
-                                <td>
-                                    <tr className={'tr-key'}>prime</tr>
-                                    <tr className={'tr-value'}>{repo.premiumAmount}</tr>
-                                </td>
-                                <td>
-                                    <tr className={'tr-key'}>capital décès</tr>
-                                    <tr className={'tr-value'}>{repo.deathamount}</tr>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-
-                ))}
-            </div>
-
+                    ))}
+                </div>
+            }
 
         } else {
             viewContracts = <div/>
